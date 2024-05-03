@@ -4,7 +4,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  .header__title {
+    color: white;
+  }
   .menu {
     display: flex;
     gap: 1rem;

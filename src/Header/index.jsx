@@ -1,18 +1,23 @@
-import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 export const Header = () => {
   return (
     <>
       <div className="header">
-        <h1 className="header__title">be aware</h1>
+        <Link to="content">
+          <h1 className="header__title">be aware</h1>
+        </Link>
         <div className="menu">
-          <Routes>
-            <Route path="/" />
-          </Routes>
-          <button>Главная</button>
-          <button>Содержание</button>
-          <button>Фишенговый симулятор</button>
+          <Link to="/">
+            <button>Главная</button>
+          </Link>
+          <Link to="content">
+            <button>Содержание</button>
+          </Link>
+          <Link to="simulator">
+            <button>Фишенговый симулятор</button>
+          </Link>
         </div>
       </div>
     </>
