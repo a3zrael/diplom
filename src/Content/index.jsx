@@ -7,6 +7,9 @@ export const Content = () => {
   const [tab, setTab] = useState(0);
 
   const openTab = (e) => setTab(+e.target.dataset.index);
+
+  console.log(difficArr);
+  console.log(...difficArr);
   return (
     <>
       <div className="content">
