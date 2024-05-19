@@ -1,0 +1,11 @@
+.mail_item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 500px;
+
+  .mail_button {
+    display: flex;
+    align-items: stretch;
+  }
+}
