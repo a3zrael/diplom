@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import "./index.scss";
 
 export const Header = () => {
@@ -15,9 +16,23 @@ export const Header = () => {
           <Link to="content">
             <button>Содержание</button>
           </Link>
-          <Link to="simulator">
-            <button>Фишенговый симулятор</button>
-          </Link>
+          <div>
+            <Menu>
+              <MenuButton>Тренажеры</MenuButton>
+              <MenuItems anchor="bottom">
+                <MenuItem>
+                  <Link to="simulator">
+                    <button>Фишенговый симулятор</button>
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to="pass">
+                    <button>Создание пароля</button>
+                  </Link>
+                </MenuItem>
+              </MenuItems>
+            </Menu>
+          </div>
         </div>
       </div>
     </>

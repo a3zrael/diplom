@@ -4,6 +4,7 @@ import "./index.scss";
 import { Land } from "../Land";
 import { Route, Routes } from "react-router-dom";
 import { FishingSimulator } from "../FishingSimulator";
+import { PassTraining } from "../PassTraining";
 
 export const App = () => {
   return (
@@ -17,6 +18,9 @@ export const App = () => {
       </Routes>
       <Routes>
         <Route path="simulator" element={<FishingSimulator />} />
+      </Routes>
+      <Routes>
+        <Route path="pass" element={<PassTraining />} />
       </Routes>
     </>
   );
