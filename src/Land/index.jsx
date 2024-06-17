@@ -54,6 +54,11 @@ export const Land = () => {
           </div>
           <img src={image2} />
         </div>
+        <p className="wrap_p">
+          <span>telegram: @marusov_aa</span>
+          <span>-</span>
+          <span>e-mail: marusov140@gmail.com</span>
+        </p>
       </div>
     </>
   );
