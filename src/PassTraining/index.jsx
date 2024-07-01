@@ -69,7 +69,7 @@ export const PassTraining = () => {
     <>
       <div>
         <div>
-          <h2>
+          <h2 className="title">
             На этой странице вы можете потренероваться в создании безопасного
             пароля
           </h2>

@@ -1,10 +1,22 @@
 .input {
-  width: 500px;
+  max-width: 500px;
   height: 55px;
   padding: 5px 10px 5px 10px;
   border: 1px solid #999;
   font-size: 50px;
   border-radius: 10px;
+
+  @media screen and (max-width: 430px) {
+    width: 250px;
+    font-size: 10px;
+    height: 30px;
+  }
+}
+
+.title {
+  @media screen and (max-width: 430px) {
+    font-size: 10px;
+  }
 }
 
 .container {
@@ -13,7 +25,7 @@
 }
 
 input {
-  width: 100%;
+  width: 500px;
   padding: 10px;
   margin: 10px 0;
   box-sizing: border-box;
@@ -24,6 +36,10 @@ input {
 .strength {
   font-weight: bold;
   margin: 10px 0;
+
+  @media screen and (max-width: 430px) {
+    font-size: 12px;
+  }
 }
 
 .suggestions {
@@ -35,4 +51,7 @@ input {
   margin: 5px 0;
   color: rgb(255, 81, 81);
   font-size: 30px;
+  @media screen and (max-width: 430px) {
+    font-size: 10px;
+  }
 }

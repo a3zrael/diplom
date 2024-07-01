@@ -11,8 +11,10 @@ export const Modal = ({ isOpen, setIsOpen, item }) => {
     <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
       <div className="bg">
         <DialogPanel className="popup">
-          <DialogTitle className="text-lg font-bold">{item.theme}</DialogTitle>
-          <Description>
+          <DialogTitle className="text-lg font-bold mobile__fix">
+            {item.theme}
+          </DialogTitle>
+          <Description className="mobile__fix">
             <p>{item.firstText}</p>
             <br />
             <a

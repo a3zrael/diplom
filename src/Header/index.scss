@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  width: 1260px;
+  max-width: 1260px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,11 +8,36 @@
 
   .header__title {
     color: white;
+    @media screen and (max-width: 430px) {
+      font-size: 16px;
+    }
   }
 
   .menu {
     display: flex;
     gap: 1rem;
+
+    @media screen and (max-width: 430px) {
+      gap: 5px;
+    }
+
+    @media screen and (max-width: 430px) {
+      .buttons {
+        button {
+          padding: 6px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      a {
+        button {
+          padding: 6px;
+          font-size: 12px;
+        }
+      }
+    }
   }
 
   .menuItems {

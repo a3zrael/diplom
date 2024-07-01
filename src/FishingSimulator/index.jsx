@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./index.scss";
 import { Modal } from "../Modal/index";
+import "./index.scss";
 
 export const FishingSimulator = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,14 +28,14 @@ export const FishingSimulator = () => {
   return (
     <>
       <div>
-        <div>
+        <div className="info">
           <h2>Данная старница является симулятором фишинговых ссылок</h2>
           <p>
             Ваша задача открыть искуственно письмо и понять является ли оно
             безопасным для вас
           </p>
         </div>
-        <div>
+        <div className="gap">
           {mailList.map((item, index) => {
             return (
               <>

@@ -2,12 +2,22 @@
   display: flex;
   justify-content: space-between;
 
+  .content__left {
+    padding: 10px;
+  }
+
   .content__right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 300px;
+    max-width: 300px;
     height: 100%;
+
+    @media screen and (max-width: 430px) {
+      .title__name {
+        font-size: 12px;
+      }
+    }
 
     .menu__flex {
       display: flex;
@@ -24,6 +34,14 @@
 
       button {
         padding: 0.5em 0.6em;
+      }
+
+      @media screen and (max-width: 430px) {
+        button {
+          padding: 5px;
+          font-size: 10px;
+          max-width: 120px;
+        }
       }
 
       .active {
