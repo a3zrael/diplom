@@ -27,7 +27,7 @@ export const FishingSimulator = () => {
 
   return (
     <>
-      <div>
+      <div className="containerFish">
         <div className="info">
           <h2>Данная старница является симулятором фишинговых ссылок</h2>
           <p>

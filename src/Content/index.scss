@@ -1,6 +1,8 @@
 .content {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
 
   .content__left {
     padding: 10px;
