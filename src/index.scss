@@ -18,7 +18,7 @@
 
 a {
   font-weight: 500;
-  color: #ffffff;
+  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
@@ -47,10 +47,13 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: white;
 }
+
 button:hover {
   border-color: #8489ea;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
