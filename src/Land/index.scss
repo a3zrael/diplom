@@ -6,12 +6,19 @@
   max-width: 1000px;
   padding: 20px;
   gap: 20px;
+
   .top-content {
     display: flex;
 
     gap: 20px;
+
     img {
-      width: 285px;
+      max-width: 15vw;
+      height: 100%;
+
+      @media screen and (max-width: 430px) {
+        display: none;
+      }
     }
   }
 
@@ -23,8 +30,14 @@
     display: flex;
 
     gap: 20px;
+
     img {
-      width: 400px;
+      max-width: 15vw;
+      height: 100%;
+
+      @media screen and (max-width: 430px) {
+        display: none;
+      }
     }
   }
 
@@ -35,10 +48,18 @@
     h2,
     h3 {
       color: black;
+
+      @media screen and (max-width: 430px) {
+        font-size: 14px;
+      }
     }
 
     p {
       color: black;
+
+      @media screen and (max-width: 430px) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -46,4 +67,10 @@
 .wrap_p {
   display: flex;
   gap: 30px;
+
+  @media screen and (max-width: 430px) {
+    span {
+      font-size: 8px;
+    }
+  }
 }

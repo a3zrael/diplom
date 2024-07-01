@@ -19,7 +19,7 @@ export const Content = () => {
           </div>
           <div className="content__right">
             <div className="menu__flex">
-              <h3>Меню</h3>
+              <h3 className="title__name">Меню</h3>
             </div>
             <div className="menu__difficulty">
               {difficArr.map((n, i) => {

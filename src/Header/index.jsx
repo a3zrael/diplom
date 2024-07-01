@@ -3,6 +3,18 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import "./index.scss";
 
 export const Header = () => {
+  const mobile_style = {
+    padding: "6px",
+    fontSize: "12px",
+    margin: "3px",
+  };
+
+  // const mobile_style_menu = {
+  //   display: "flex",
+  //   gap: "5px",
+  //   flexDirection: "column",
+  // };
+
   return (
     <>
       <div className="header">
@@ -16,18 +28,20 @@ export const Header = () => {
           <Link to="content">
             <button>Содержание</button>
           </Link>
-          <div>
+          <div className="buttons">
             <Menu>
               <MenuButton>Тренажеры</MenuButton>
               <MenuItems anchor="bottom">
                 <MenuItem>
                   <Link to="simulator">
-                    <button>Фишенговый симулятор</button>
+                    <button style={mobile_style} className="menu__bottoms">
+                      Фишенговый симулятор
+                    </button>
                   </Link>
                 </MenuItem>
                 <MenuItem>
                   <Link to="pass">
-                    <button>Создание пароля</button>
+                    <button style={mobile_style}>Создание пароля</button>
                   </Link>
                 </MenuItem>
               </MenuItems>
